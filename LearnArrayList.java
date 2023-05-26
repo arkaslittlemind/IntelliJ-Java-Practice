@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class LearnArrayList {
@@ -41,10 +42,28 @@ public class LearnArrayList {
         list.add(80);
 
         System.out.println(list);
-        list.set(2, 1000); // updates the element at the defined index
-        System.out.println(list);
 
-        System.out.println(list.contains(50)); //returns a boolean value if the element is present in the list
+        // Accessing elements in a list with various looping statements //
+        System.out.println("First Way ->>");
+        for(int i = 0; i < list.size(); i++) {
+            System.out.println("Elements: " + list.get(i));
+        }
+
+        System.out.println("Second Way ->>");
+        for(Integer elements : list) {
+            System.out.println("Elements: " + elements);
+        }
+
+        System.out.println("Third Way -->");
+        Iterator<Integer> it = list.iterator();
+        while(it.hasNext()) {
+            System.out.println("Iterator" + it.next());
+        }
+
+        //list.set(2, 1000); // updates the element at the defined index
+        //System.out.println(list);
+
+        //System.out.println(list.contains(500)); //returns a boolean value if the element is present in the list
 
         /*System.out.println(list);
         list.remove(1); //removes element at index 1
