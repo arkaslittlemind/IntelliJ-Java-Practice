@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class AirlineReservationSystem {
-    private static boolean[] seats = new boolean[10]; // Array to represent seating chart
+    private static final boolean[] seats = new boolean[10]; // Array to represent seating chart
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
