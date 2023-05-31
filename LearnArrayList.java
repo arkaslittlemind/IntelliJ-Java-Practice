@@ -60,19 +60,18 @@ public class LearnArrayList {
             System.out.println("Iterator" + it.next());
         }
 
-        //list.set(2, 1000); // updates the element at the defined index
-        //System.out.println(list);
+        // list.set(2, 1000); // updates the element at the defined index
+        // System.out.println(list);
+        // System.out.println(list.contains(500)); //returns a boolean value if the element is present in the list
+        // System.out.println(list);
+        //  list.remove(1); //removes element at index 1
+        //  System.out.println(list);
+        //
+        //  list.remove(Integer.valueOf(60)); //removes the element with value 60
+        //  System.out.println(list);
+        //
+        //  list.clear();  //remove all elements from the list
+        //  System.out.println(list);
 
-        //System.out.println(list.contains(500)); //returns a boolean value if the element is present in the list
-
-        /*System.out.println(list);
-        list.remove(1); //removes element at index 1
-        System.out.println(list);
-
-        list.remove(Integer.valueOf(60)); //removes the element with value 60
-        System.out.println(list);
-
-        list.clear();  //remove all elements from the list
-        System.out.println(list);*/
     }
 }
