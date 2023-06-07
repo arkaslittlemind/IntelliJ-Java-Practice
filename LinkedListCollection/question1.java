@@ -2,7 +2,7 @@
 // then creates a second LinkedList object containing a copy of the first list,
 // but in reverse order.
 
-package LinkedList;
+package LinkedListCollection;
 
 import java.util.Collections;
 import java.util.LinkedList;
