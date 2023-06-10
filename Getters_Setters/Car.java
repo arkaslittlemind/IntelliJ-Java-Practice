@@ -1,10 +1,11 @@
 package Getters_Setters;
 
+
 public class Car {
-    private final String make;
-    private final double price;
-    private final int year;
-    private final String color;
+    private String make;
+    private double price;
+    private int year;
+    private String color;
 
     public Car(String make, double price, int year, String color){
         this.make = make;
@@ -13,22 +14,33 @@ public class Car {
         this.color = color;
     }
 
-    public String getMake() {
+    public String getMake() { //getter
         return make;
     }
 
-    public double getPrice() {
+    public double getPrice() { //getter
         return price;
     }
 
-    public double getYear() {
+    public void setPrice(double price){ //setter
+        this.price = price;
+    }
+
+    public int getYear() { //getter
         return year;
     }
 
-    public String getColor() {
+    public void setYear(int year){ //setter
+        this.year = year;
+    }
+
+    public String getColor() { //getter
         return color;
     }
 
+    public void setColor(String color) {  //setter
+        this.color = color;
+    }
 
 
 }
