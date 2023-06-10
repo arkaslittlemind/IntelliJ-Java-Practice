@@ -1,4 +1,4 @@
-package Getters;
+package Getters_Setters;
 
 public class Main {
     public static void main(String[] args) {

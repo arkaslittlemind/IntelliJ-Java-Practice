@@ -1,10 +1,10 @@
-package Getters;
+package Getters_Setters;
 
 public class Car {
-    private String make;
-    private double price;
-    private int year;
-    private String color;
+    private final String make;
+    private final double price;
+    private final int year;
+    private final String color;
 
     public Car(String make, double price, int year, String color){
         this.make = make;
