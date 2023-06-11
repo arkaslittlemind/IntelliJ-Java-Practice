@@ -30,7 +30,7 @@ class Stack {
     }
 
     public int pop() throws StackUnderFlow {
-        int x = -1;
+        int x;
 
         if(top == -1)
             throw new StackUnderFlow();
