@@ -13,7 +13,7 @@ public class ExceptionDemo {
 
         try {
             int c = a / b;
-            System.out.println(c);
+            System.out.println("Answer is:" + c);
         } catch (ArithmeticException e) {
             //System.out.println(e);
             System.out.println("Denominator should not be zero. TRY AGAIN!!");
