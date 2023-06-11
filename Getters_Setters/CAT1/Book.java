@@ -48,4 +48,8 @@ public class Book {
         return "Book Name: " + bookName + "\nISBN: " + ISBN + "\nAuthor: " + authorName + "\nPublisher: " + publisher;
     }
 
+    public String toString() {
+        return "Book Name: " + bookName + "\nISBN: " + ISBN + "\nAuthor: " + authorName + "\nPublisher: " + publisher;
+    }
+
 }

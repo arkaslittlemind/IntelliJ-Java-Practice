@@ -5,7 +5,7 @@ public class Main {
 
        Book book = new Book("Cracking the Coding Interview", "978-0-9847828-6-4", "Gayle Laakmann Mcdowell", "Career Cup");
 
-       System.out.println("The details of the book are: " + book.getInfo());
-
+       //System.out.println("The details of the book are: " + book.getInfo());
+       System.out.println(book);
     }
 }
