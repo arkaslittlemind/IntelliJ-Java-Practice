@@ -43,11 +43,7 @@ public class CircleDragDemo extends JFrame {
         JLabel label2 = new JLabel("Circle 2:");
         JButton resetButton = new JButton("Reset");
 
-        resetButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                circlePanel.resetCircles();
-            }
-        });
+        resetButton.addActionListener(e -> circlePanel.resetCircles());
 
         controlPanel.add(label1);
         controlPanel.add(new JLabel("X:"));
@@ -71,11 +67,7 @@ public class CircleDragDemo extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new CircleDragDemo();
-            }
-        });
+        SwingUtilities.invokeLater(CircleDragDemo::new);
     }
 }
 
