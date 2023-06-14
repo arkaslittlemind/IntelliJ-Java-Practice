@@ -9,28 +9,9 @@ package Generics;
 
 import java.util.*;
 
-class Product {
-    private final int id;
-    private final String name;
-    private final double price;
+record Product(int id, String name, double price) {
 
-    public Product(int id, String name, double price){
-        this.id = id;
-        this.name = name;
-        this.price = price;
-    }
-    public int getId() {
-        return id;
-    }
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public String toString(){
+    public String toString() {
         return "ID:" + id + "\nName:" + name + "\nPrice:" + price;
     }
 }
@@ -43,7 +24,7 @@ public class question2 {
         productList.add(new Product(3, "Product C", 7.99));
 
         //Sorting the arraylist in ascending order of price
-        productList.sort(Comparator.comparingDouble(Product::getPrice));
+        productList.sort(Comparator.comparingDouble(Product::price));
 
         System.out.println("Products sorted by price: \n");
         Iterator<Product> it = productList.iterator();
