@@ -44,9 +44,9 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public String getInfo() {
-        return "Book Name: " + bookName + "\nISBN: " + ISBN + "\nAuthor: " + authorName + "\nPublisher: " + publisher;
-    }
+//    public String getInfo() {
+//        return "Book Name: " + bookName + "\nISBN: " + ISBN + "\nAuthor: " + authorName + "\nPublisher: " + publisher;
+//    }
 
     public String toString() {
         return "Book Name: " + bookName + "\nISBN: " + ISBN + "\nAuthor: " + authorName + "\nPublisher: " + publisher;
