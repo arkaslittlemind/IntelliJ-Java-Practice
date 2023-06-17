@@ -6,6 +6,8 @@ import java.io.*;
 public class FileExample {
     public static void main(String[] args) {
         String[] names = {"Arka", "Yash", "Debayan"};
+
+        //Writing the file
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("F://IntelliJ-Java-Practice//FileHandling//Test1.txt"));
             writer.write("Learn and practicing for final semester java exam");
@@ -20,6 +22,7 @@ public class FileExample {
             e.printStackTrace();
         }
 
+        //Reading the file
         try {
             BufferedReader reader = new BufferedReader(new FileReader("F://IntelliJ-Java-Practice//FileHandling//Test1.txt"));
             String line;
