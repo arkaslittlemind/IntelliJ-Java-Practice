@@ -1,3 +1,5 @@
+package CAT2_A2_SLOT;
+
 class Bakery {
 	int counter=0; 
 	
