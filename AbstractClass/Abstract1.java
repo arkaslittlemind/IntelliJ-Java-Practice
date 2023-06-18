@@ -1,7 +1,5 @@
 package AbstractClass;
 
-
-
 abstract class Animal {
     public void soundmade() {
         System.out.println("Dog Bark!");
