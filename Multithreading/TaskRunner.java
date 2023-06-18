@@ -6,18 +6,14 @@ public class TaskRunner {
         Task1 task1 = new Task1();
         Task2 task2 = new Task2();
 
-        Thread t1 = new Thread(task1);
-        Thread t2 = new Thread(task2);
-
-        t1.start();
-        t2.start();
-
+        task1.start();
+        task2.start();
 
     }
 }
 
 //First task
-class Task1 implements Runnable {
+class Task1 extends Thread {
     public void run() {
         for (int i = 0; i < 100; i++) {
             System.out.println("Hello World");
@@ -34,7 +30,7 @@ class Task1 implements Runnable {
 
 
 //Second task
-class Task2 implements Runnable {
+class Task2 extends Thread {
     public void run() {
         Random random = new Random();
         for (int i = 1; i <= 100; i++) {
