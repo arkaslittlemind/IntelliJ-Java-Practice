@@ -87,7 +87,7 @@ public class AirlineReservationSystem {
 
     private static void printBoardingPass() {
         for (int i = 0; i < seats.length; i++) {
-            if (seats[i]) {
+            if (seats[i]) { //testing git
                 String section = (i < 5) ? "First Class" : "Economy";
                 System.out.println("Seat Number: " + (i + 1) + " (" + section + ")");
             }
